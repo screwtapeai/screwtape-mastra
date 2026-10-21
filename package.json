@@ -1,0 +1,30 @@
+{
+  "name": "screwtape-mastra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "False-consensus check and pass/fail/retry verdicts for Mastra agents, with Screwtape.ai.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/screwtapeai/screwtape-mastra.git"
+  },
+  "homepage": "https://screwtape.ai/",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx index.ts",
+    "check": "tsc --noEmit",
+    "get-key": "tsx get-free-key.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "1.78.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
